@@ -13,15 +13,14 @@ public class Main {
     Main() {
         frame = new JFrame("Demo");
         label = new JLabel();
-        label.setBackground(Color.red);
-        label.setBounds(100, 100, 100, 100);
-        label.setOpaque(true);
-
         upAction = new Main.UpAction();
         downAction = new Main.DownAction();
         leftAction = new Main.LeftAction();
         rightAction = new Main.RightAction();
 
+        label.setBackground(Color.red);
+        label.setBounds(100, 100, 100, 100);
+        label.setOpaque(true);
         label.getInputMap().put(KeyStroke.getKeyStroke("UP"), "upAction");
         label.getActionMap().put("upAction", upAction);
         label.getInputMap().put(KeyStroke.getKeyStroke("DOWN"), "downAction");
