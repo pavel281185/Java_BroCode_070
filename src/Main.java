@@ -3,7 +3,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 
 public class Main {
-
     JFrame frame;
     JLabel label;
     Action upAction;
@@ -25,16 +24,12 @@ public class Main {
 
         label.getInputMap().put(KeyStroke.getKeyStroke("UP"), "upAction");
         label.getActionMap().put("upAction", upAction);
-
         label.getInputMap().put(KeyStroke.getKeyStroke("DOWN"), "downAction");
         label.getActionMap().put("downAction", downAction);
-
         label.getInputMap().put(KeyStroke.getKeyStroke("LEFT"), "leftAction");
         label.getActionMap().put("leftAction", leftAction);
-
         label.getInputMap().put(KeyStroke.getKeyStroke("RIGHT"), "rightAction");
         label.getActionMap().put("rightAction", rightAction);
-
 
         frame.add(label);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
